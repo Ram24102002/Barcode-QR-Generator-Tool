@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Generator</title>
+    <link rel="stylesheet" href="BarcodeGenerator.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bwip-js@3.0.1/dist/bwip-js.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+</head>
+<body>
+
+
+    <header><h1><u>Barcode / QR Generator Tool</u> 🛠️</h1></header>
+
+    
+    
+ <!-- Barcode----------------------------------------------------------------------- -->
+        
+    <div class="container">
+        <h1>Barcode</h1>
+         <input type="text" id="barcode-input" placeholder="Enter barcode value" />
+        
+
+        <!-- Barcode output will be rendered here -->
+        <svg id="barcode"></svg>
+    </div>
+      
+<!-- ----------------------------------------------------------------------- Barcode -->
+
+
+
+
+
+<!-- Data Matrix Barcode----------------------------------------------------------------------- -->
+
+ 
+<section class="barcode-container container" >
+    <h1>Data Matrix Barcode</h1>
+    <article class="QR-Article ">
+        <!-- Input field for user to enter data -->
+        <textarea type="text" id="DataMatrixInput" placeholder="Enter data for barcode"></textarea>
+
+        <!-- Canvas to render barcode -->
+        <canvas id="datamatrixCanvas"></canvas>
+    </article>
+</section>
+     
+<!-- ----------------------------------------------------------------------- Barcode -->
+
+      
+<!-- QR Code----------------------------------------------------------------------- -->
+  
+<section class="container" >
+    <h1>QR Code</h1><br>
+    <article class="QR-Article ">
+        
+      <aside class="QR-input-aside">
+          <textarea type="textarea" placeholder="Paste Text Here" class="QR-input"></textarea>
+      </aside>
+      <aside class="QR-aside">
+          <div class="qrcode-container">
+              <!-- QR Code will be generated here -->
+          </div>
+      </aside>
+  </article>
+</section>
+
+<!-- ----------------------------------------------------------------------- Barcode -->
+
+
+
+
+
+   
+      
+
+
+
+
+    <script src="BarcodeGenerator.js"></script>
+
+    
+
+</body>
+</html>

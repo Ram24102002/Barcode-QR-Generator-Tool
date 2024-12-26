@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+    background-color: #f4f4f4;
+    padding: 50px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 30px;
+}
+
+.QR-Article
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qrcode-container
+{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+
+}
+
+.qrcode-container img
+{
+    height: 150px;
+    width: 150px;
+}
+#QR-aside {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#datamatrixCanvas
+{
+    height: 150px;
+    width: 150px;
+}
+
+
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+textarea
+{
+    height: 130px;
+    width: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#barcode {
+    margin-top: 20px;
+    width: 500px;
+}
